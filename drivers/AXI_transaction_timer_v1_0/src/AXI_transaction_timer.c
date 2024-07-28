@@ -6,10 +6,15 @@
 /************************** Function Definitions ***************************/
 
 
-
 XStatus AXI_transaction_timer_enable(u32 dev_addr)
 {
     AXI_TRANSACTION_TIMER_mWriteReg(dev_addr, AXI_TRANSACTION_TIMER_STATUS_OFFSET_REG, 0x00000001);
+    return XST_SUCCESS;
+}
+
+XStatus AXI_transaction_timer_disable(u32 dev_addr)
+{
+    AXI_TRANSACTION_TIMER_mWriteReg(dev_addr, AXI_TRANSACTION_TIMER_STATUS_OFFSET_REG, 0x00000000);
     return XST_SUCCESS;
 }
 
