@@ -32,7 +32,7 @@ A simple Vivado IP package intended for measuring clock periods between write an
 |  31-0  | START_ADDR |  0   | RW   | The desired start address for counting. If ENABLE is set, an AXI write operation at START_ADDRESS will trigger the count.|
 
 #### STOP_ADDRESS
-- Address: 0x08
+- Address: 0x0C
 
 |  Bit   | Field      | Reset| Type | Description|
 |--------|------------|------|------|------------|
