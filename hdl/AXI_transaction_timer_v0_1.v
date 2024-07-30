@@ -15,12 +15,12 @@
 	)
 	(
 		// Users to add ports here
-		input wire i_axi_awready,
-		input wire i_axi_awvalid,
-		input wire [AXI_MONITOR_ADDR_SIZE-1:0] i_axi_awaddr,
-		input wire i_axi_arready,
-		input wire i_axi_arvalid,
-		input wire [AXI_MONITOR_ADDR_SIZE-1:0] i_axi_araddr,
+		input wire s01_axi_awready,
+		input wire s01_axi_awvalid,
+		input wire [AXI_MONITOR_ADDR_SIZE-1:0] s01_axi_awaddr,
+		input wire s01_axi_arready,
+		input wire s01_axi_arvalid,
+		input wire [AXI_MONITOR_ADDR_SIZE-1:0] s01_axi_araddr,
 
 		// User ports ends
 		// Do not modify the ports beyond this line
@@ -111,12 +111,12 @@
 		.i_start_address(start_address),
 		.i_stop_address(stop_address),
 		.i_enable(enable_sm),
-		.i_axi_awvalid(i_axi_awvalid),
-		.i_axi_awready(i_axi_awready),
-		.i_axi_awaddr(i_axi_awaddr),
-		.i_axi_arvalid(i_axi_arvalid),
-		.i_axi_arready(i_axi_arready),
-		.i_axi_araddr(i_axi_araddr),
+		.i_axi_awvalid(s01_axi_awvalid),
+		.i_axi_awready(s01_axi_awready),
+		.i_axi_awaddr(s01_axi_awaddr),
+		.i_axi_arvalid(s01_axi_arvalid),
+		.i_axi_arready(s01_axi_arready),
+		.i_axi_araddr(s01_axi_araddr),
 		.i_count(current_count),
 		.o_valid(count_valid),
 		.o_time(count_reg),
