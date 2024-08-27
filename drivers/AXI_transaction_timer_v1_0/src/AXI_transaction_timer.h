@@ -114,7 +114,7 @@ XStatus AXI_transaction_timer_enable(u32 dev_addr);
  * @param dev_addr Transaction timer base address
  * @return XStatus Always XST_SUCCESS
  */
-XStatus AXI_transaction_timer_disable(u32 dev_addr)
+XStatus AXI_transaction_timer_disable(u32 dev_addr);
 
 /**
  * @brief Get Status register from transaction timer
