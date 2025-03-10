@@ -1,6 +1,6 @@
 # axi_transacion_timer
 
-A simple Vivado IP package designed to measure clock periods between write and read AXI operations at specified addresses.
+A simple Vivado IP package designed to count clock cycles between write and read AXI operations at specified addresses.
 
 ## Register map
 
